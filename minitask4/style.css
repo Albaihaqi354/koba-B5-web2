@@ -1,0 +1,38 @@
+:root {
+    --primary: cyan;
+    --secondary: burlywood;
+}
+
+input[type="email"] {
+    border: 2px solid red;
+}
+
+button[data-role="primary"] {
+    border: 2px solid black;
+}
+
+article[data-status="error"] {
+    color: blueviolet;
+}
+
+table tbody tr:nth-child(odd){
+    background-color: var(--primary);
+}
+
+table tbody tr:nth-child(even){
+    background-color: var(--secondary);
+}
+
+.simple-list li:nth-child(3n) {
+    background-color: chartreuse;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: brown;
+}
+
+article.post h2 + p::first-letter {
+  font-size: 2rem;
+  font-weight: bold;
+}
